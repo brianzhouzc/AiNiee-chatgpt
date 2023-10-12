@@ -27,7 +27,7 @@
 ***
 * 1.🖱️双击`启动AiNiee-chatgpt4.exe`,在账号设置页面配置你的账号信息以及`API KEY`
     > 🔥官方账号配置示例:<br>
-    > ![screenshot](/docs/images/官方账号设置.png)<br>
+    > ![official_account_settings](/docs/images/official_account_settings.png)<br>
     > 官方账号配置说明:<br>
     > `启用该平台`: 如果使用该平台的AI进行翻译,请勾上<br>
   
@@ -40,7 +40,7 @@
     >`代理端口`: 可以不输入,如果需要设置代理时,再则填入http://<代理ip>:<代理端口>,示例：`http://127.0.0.1:10081`<br>
 
     > 🎐代理账号配置示例:<br>
-    > ![screenshot](/docs/images/代理账号设置.png)<br> 
+    > ![proxy_account_settings](/docs/images/proxy_account_settings.png)<br> 
     > 代理账号配置说明:<br>
     >`API KEY`: 填入国内代理平台给你生成的API KEY<br>
 
@@ -53,16 +53,16 @@
     >`请求地址`: 填入国内代理平台提供的请求地址,如OpenAI-sb平台提供的请求地址是`api.openai-sb.com`,则填入：`https://api.openai-sb.com/v1`
   
 * 2.✅点击请求测试,测试网络是否通畅,请求是否成功
-    >![screenshot](/docs/images/请求成功.png) 
+    >![request_success](/docs/images/request_success.png) 
 * 3-1.如果使用`🔵Mtool`进行翻译请根据以下步骤操作
     > 1.使用Mtool打开游戏,并在翻译功能界面,选择导出游戏原文文件,会在游戏根目录生成：ManualTransFile.json<br>
   
-    >![screenshot](/docs/images/Mtool/导出原文1.png)  |  ![screenshot](/docs/images/Mtool/导出原文2.png)
+    >![export_original_text_1](/docs/images/Mtool/export_original_text_1.png)  |  ![export_original_text_2](/docs/images/Mtool/export_original_text_2.png)
   <br>
   
     > 2.在`AiNiee-chatgpt`界面选择`🔵Mtool项目`,并配置翻译设置<br>
     >配置示例:<br>
-    >![screenshot](/docs/images/Mtool/翻译设置Mtool.png)<br>
+    >![mtool_translation_settings](/docs/images/Mtool/mtool_translation_settings.png)<br>
     >配置说明:<br>
     >`Lines`: 每次请求翻译的文本行数。行数设置越大,整体的翻译效果会更好,上下文更加流畅,但每次请求回复速度会越慢,回复的内容越容易出错。根据模型类型来进行设置，建议gpt3.5基础模型不要设置超过40,gpt4基础模型不超过80<br>
   
@@ -82,39 +82,39 @@
   
 * 3-2.🖱️点击**开始翻译**按钮,看控制台输出日志或者进度条。之后等待翻译进度到百分百,自动生成翻译好的文件Tradata.json在输出文件夹中
     > 正在进行翻译<br>
-    > ![screenshot](/docs/images/Mtool/UI界面正在翻译.png)
+    > ![ui_translation_processing](/docs/images/Mtool/ui_translation_processing.png)
    
 
     > 已经完成翻译<br>
-    >![screenshot](/docs/images/Mtool/UI界面翻译完成.png)
+    >![ui_translation_success](/docs/images/Mtool/ui_translation_success.png)
 
    回到`🔵Mtool`工具,依然在翻译功能界面,选择加载翻译文件,选择Tradata.json文件即可
-    > ![screenshot](/docs/images/Mtool/导入译文.png) 
+    > ![import_translation](/docs/images/Mtool/import_translation.png) 
 
 * 4-1.如果使用`🔴Translator++`进行翻译请根据以下步骤操作
     > 1.🖱️打开`🔴Translator++`,选择“start a new project”,根据你的游戏图标来选择对应的游戏引擎<br>
-    >![screenshot](/docs/images/Tpp/新建工程1.png) | ![screenshot](/docs/images/Tpp/新建工程2.png)<br>
+    >![new_project_1](/docs/images/Tpp/new_project_1.png) | ![new_project_2](/docs/images/Tpp/new_project_2.png)<br>
     > 2.选择你的游戏文件,创建新工程,软件会自动解包和导入游戏数据<br>
-    >![screenshot](/docs/images/Tpp/新建工程3.png) | ![screenshot](/docs/images/Tpp/新建工程4.png)
+    >![new_project_3](/docs/images/Tpp/new_project_3.png) | ![new_project_4](/docs/images/Tpp/new_project_4.png)
 
   当弹出提示框,问你：**Do you  also want to load JavaScript files**时,选择**Cancel**,加载脚本里的文本修改容易出错,而且大多都是脚本注释,翻译了也没用
 
     > 3.🖱️点"Options"按钮,选择"Preferences",选择"UI Language",选择简体中文,方便之后操作<br>
-    >![screenshot](/docs/images/Tpp/汉化设置1.png) | ![screenshot](/docs/images/Tpp/汉化设置2.png)<br>
+    >![translation_settings_1](/docs/images/Tpp/translation_settings_1.png) | ![translation_settings_2](/docs/images/Tpp/translation_settings_2.png)<br>
     > 4.点左上角的导出工程,选择导出格式为XML格式到你指定的文件夹,生成data文件夹<br>
-    >![screenshot](/docs/images/Tpp/导出工程1.png) | ![screenshot](/docs/images/Tpp/导出工程2.png)
+    >![export_project_1](/docs/images/Tpp/export_project_1.png) | ![export_project_2](/docs/images/Tpp/export_project_2.png)
  
   当弹出提示框,问如何处理标记列,就点击红色和选择**Do not process row with selected tag**,或者不设置直接导出,因为这工具暂时存在bug,无法过滤标记内容
     > 5.在AiNiee界面,选择`🔴Translator++项目`,配置翻译设置<br>
     > 配置示例<br>
-    > ![screenshot](/docs/images/Tpp/翻译配置Tpp.png)<br>
+    > ![tpp_translation_settings](/docs/images/Tpp/tpp_translation_settings.png)<br>
     > 配置说明:<br>
     > `项目文件夹`: 选择之前`🔴Translator++`导出的项目文件夹data<br>
     > `输出文件夹`: 选择翻译后项目文件夹的存储文件夹<br>
 * 4-2.🖱️点**开始翻译**按钮,等待翻译进度到百分百,生成翻译好的data文件夹在输出文件夹中,翻译中的备份会在在Backup Folder文件夹的data里<br>
     > 1.回到`🔴Translator++`+,点击导入工程,选择从电子表格导入翻译,点击“Import Folder”,选择输出文件夹里的data文件夹,点击导入<br>
-    >![screenshot](/docs/images/Tpp/导入工程1.png) | 
-    >![screenshot](/docs/images/Tpp/导入工程2.png)<br>
+    >![import_project_1](/docs/images/Tpp/import_project_1.png) | 
+    >![import_project_2](/docs/images/Tpp/import_project_2.png)<br>
 
     > 2.🖱️右键左侧区域,移到"全部选择",选择"Create Automation",选择"对每行",复制粘贴下面的代码运行<br>
   
@@ -124,12 +124,12 @@
     if (this.tags.includes("red")) this.cells[1]=this.cells[0];
   }
   ```
-    > ![screenshot](/docs/images/Tpp/处理错误1.png) | ![screenshot](/docs/images/Tpp/处理错误2.png)
+    > ![error_processing_1](/docs/images/Tpp/error_processing_1.png) | ![error_processing_2](/docs/images/Tpp/error_processing_2.png)
   
    > 3.查看左边文件有哪个没有到达百分百的,寻找到空行并自行翻译
   
 * 4-3.最后选择导出工程,选择导出到文件夹,指定**你的游戏目录里的data文件夹的上一级文件夹**,原文件会被替换,请注意备份原游戏
-    >![screenshot](/docs/images/Tpp/修改游戏1.png) | ![screenshot](/docs/images/Tpp/修改游戏2.png)
+    >![game_edit_1](/docs/images/Tpp/game_edit_1.png) | ![game_edit_2](/docs/images/Tpp/game_edit_2.png)
 
 # 其他功能🕹️ 
 ***
@@ -192,7 +192,7 @@ https://github.com/XD2333/GalTransl
 https://github.com/Abcuders/AutoAnimeMv
 
 # 感谢💖
-[![xxxx](/docs/images/Sponsor/徽章.png)](/docs/images/Sponsor/赞赏码.png)
+[![donation](/docs/images/Sponsor/badge.png)](/docs/images/Sponsor/donation_qrcode.png)
 
 都是为这个工具做出各种贡献的朋友，以下排名不分先后
 >下划线君，孤狼，Takakura Anri，Amegi，hola，旧日，OYcedar，Abcuders，ChristinaA2M，adastra9257，NEKOparapa
